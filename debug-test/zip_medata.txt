@@ -1,0 +1,89 @@
+ BitsPerPixel	16
+ DimensionOrder	XYCZT
+ IsInterleaved	true
+ IsRGB	false
+ LittleEndian	true
+ PixelType	uint16
+ Series 0 Name	test_bochum.sdt
+ SizeC	9830400
+ SizeT	3941120
+ SizeX	1
+ SizeY	65536
+ SizeZ	1
+BHFileBlockHeader.blockLength	2150432776
+BHFileBlockHeader.blockNo	0
+BHFileBlockHeader.blockType	19280
+BHFileBlockHeader.dataOffs	1
+BHFileBlockHeader.lblockNo	20
+BHFileBlockHeader.measDescBlockNo	1027
+BHFileBlockHeader.nextBlockOffs	134217728
+Date	09:29:2023
+ID	SPC Setup & Data File
+Location	C:\Users\jenu.chacko\OneDrive - Bruker-Physik GmbH\Desktop\test_bochum.sdt
+MeasFCSInfo.calcPhotons	0
+MeasFCSInfo.chan	0
+MeasFCSInfo.cortime	0.0
+MeasFCSInfo.crossChan	0
+MeasFCSInfo.crossMod	0
+MeasFCSInfo.crossMtResol	1.0
+MeasFCSInfo.endTime	0.0
+MeasFCSInfo.fcsDecayCalc	0
+MeasFCSInfo.fcsPoints	0
+MeasFCSInfo.fcsType	512
+MeasFCSInfo.mod	512
+MeasFCSInfo.mtResol	0
+MeasFCSInfo.overruns	0
+MeasHISTInfo.fidaPoints	0
+MeasHISTInfo.fidaTime	0.0
+MeasHISTInfo.fildaPoints	0
+MeasHISTInfo.fildaTime	0.0
+MeasHISTInfo.mcsPoints	0
+MeasHISTInfo.mcsTime	0.0
+MeasStopInfo.curCycle	0
+MeasStopInfo.curPage	0
+MeasStopInfo.curStep	0
+MeasStopInfo.flags	0
+MeasStopInfo.maxAdcRate	0.0
+MeasStopInfo.maxCfdRate	0.0
+MeasStopInfo.maxSyncRate	0.0
+MeasStopInfo.maxTacRate	0.0
+MeasStopInfo.minAdcRate	0.0
+MeasStopInfo.minCfdRate	0.0
+MeasStopInfo.minSyncRate	0.0
+MeasStopInfo.minTacRate	0.0
+MeasStopInfo.reserved1	0
+MeasStopInfo.reserved2	0.0
+MeasStopInfo.status	0
+MeasStopInfo.stopTime	0.0
+MeasureInfo.accumulate	0
+MeasureInfo.adcDE	0
+MeasureInfo.adcRE	15395
+MeasureInfo.adcZoom	0
+MeasureInfo.bordL	512
+MeasureInfo.bordU	131073
+MeasureInfo.cfdHF	-1.1660309
+MeasureInfo.cfdLH	-5.0
+MeasureInfo.cfdLL	5.0
+MeasureInfo.cfdZC	5.6E-45
+MeasureInfo.colT	3.59E-43
+MeasureInfo.cycles	0
+MeasureInfo.date	143000XZV
+MeasureInfo.deadTimeComp	0
+MeasureInfo.detType	0
+MeasureInfo.dither	26465
+MeasureInfo.ealDE	0
+MeasureInfo.epxDiv	0
+MeasureInfo.fifoTyp	0
+MeasureInfo.flbckX	878100373
+MeasureInfo.flbckY	0
+MeasureInfo.imageRX	0
+MeasureInfo.imageRY	0
+MeasureInfo.imageX	1
+MeasureInfo.imageY	1
+MeasureInfo.incr	25959
+MeasureInfo.linediv	0
+MeasureInfo.masterClock	0
+MeasureInfo.measMode	16544
+MeasureInfo.memBank	8306
+MeasureInfo.modFpgaVer	0
+MeasureInfo.modSerNo	33��

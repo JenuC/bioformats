@@ -1,0 +1,144 @@
+ BitsPerPixel	16
+ DimensionOrder	XYCZT
+ IsInterleaved	true
+ IsRGB	false
+ LittleEndian	true
+ PixelType	uint16
+ Series 0 Name	test_bochum_uz.sdt
+ SizeC	1
+ SizeT	256
+ SizeX	512
+ SizeY	512
+ SizeZ	1
+BHFileBlockHeader.blockLength	134217728
+BHFileBlockHeader.blockNo	0
+BHFileBlockHeader.blockType	19
+BHFileBlockHeader.dataOffs	758
+BHFileBlockHeader.lblockNo	1
+BHFileBlockHeader.measDescBlockNo	0
+BHFileBlockHeader.nextBlockOffs	134218486
+Date	09:29:2023
+ID	SPC Setup & Data File
+Location	C:\Users\jenu.chacko\OneDrive - Bruker-Physik GmbH\Desktop\test_bochum_uz.sdt
+MeasFCSInfo.calcPhotons	0
+MeasFCSInfo.chan	0
+MeasFCSInfo.cortime	0.0
+MeasFCSInfo.crossChan	0
+MeasFCSInfo.crossMod	0
+MeasFCSInfo.crossMtResol	0.0
+MeasFCSInfo.endTime	0.0
+MeasFCSInfo.fcsDecayCalc	0
+MeasFCSInfo.fcsPoints	0
+MeasFCSInfo.fcsType	0
+MeasFCSInfo.mod	0
+MeasFCSInfo.mtResol	0
+MeasFCSInfo.overruns	0
+MeasHISTInfo.fidaPoints	0
+MeasHISTInfo.fidaTime	0.0
+MeasHISTInfo.fildaPoints	0
+MeasHISTInfo.fildaTime	0.0
+MeasHISTInfo.mcsPoints	0
+MeasHISTInfo.mcsTime	0.0
+MeasStopInfo.curCycle	0
+MeasStopInfo.curPage	0
+MeasStopInfo.curStep	0
+MeasStopInfo.flags	0
+MeasStopInfo.maxAdcRate	0.0
+MeasStopInfo.maxCfdRate	0.0
+MeasStopInfo.maxSyncRate	0.0
+MeasStopInfo.maxTacRate	0.0
+MeasStopInfo.minAdcRate	0.0
+MeasStopInfo.minCfdRate	0.0
+MeasStopInfo.minSyncRate	0.0
+MeasStopInfo.minTacRate	0.0
+MeasStopInfo.reserved1	0
+MeasStopInfo.reserved2	0.0
+MeasStopInfo.status	0
+MeasStopInfo.stopTime	0.0
+MeasureInfo.accumulate	0
+MeasureInfo.adcDE	0
+MeasureInfo.adcRE	256
+MeasureInfo.adcZoom	0
+MeasureInfo.bordL	0
+MeasureInfo.bordU	0
+MeasureInfo.cfdHF	5.0
+MeasureInfo.cfdLH	80.0
+MeasureInfo.cfdLL	-31.4
+MeasureInfo.cfdZC	5.0
+MeasureInfo.colT	0.01
+MeasureInfo.cycles	1
+MeasureInfo.date	09:29:2023
+MeasureInfo.deadTimeComp	1
+MeasureInfo.detType	0
+MeasureInfo.dither	128
+MeasureInfo.ealDE	0
+MeasureInfo.epxDiv	1
+MeasureInfo.fifoTyp	0
+MeasureInfo.flbckX	0
+MeasureInfo.flbckY	0
+MeasureInfo.imageRX	1
+MeasureInfo.imageRY	1
+MeasureInfo.imageX	512
+MeasureInfo.imageY	512
+MeasureInfo.incr	1
+MeasureInfo.linediv	2
+MeasureInfo.masterClock	0
+MeasureInfo.measMode	9
+MeasureInfo.memBank	0
+MeasureInfo.modFpgaVer	300
+MeasureInfo.modSerNo	2143000XZV
+MeasureInfo.modType	Time Tagger Ult
+MeasureInfo.modTypeCode	150
+MeasureInfo.ncx	1
+MeasureInfo.ncy	1
+MeasureInfo.offset	0.0
+MeasureInfo.overfl	78
+MeasureInfo.overflowCorrFactor	0.0
+MeasureInfo.page	1
+MeasureInfo.pixClk	1
+MeasureInfo.pixTime	2.0E-7
+MeasureInfo.polarityF	0
+MeasureInfo.polarityL	0
+MeasureInfo.polarityP	1
+MeasureInfo.repT	10.0
+MeasureInfo.scanRX	1
+MeasureInfo.scanRY	1
+MeasureInfo.scanX	512
+MeasureInfo.scanY	512
+MeasureInfo.steps	1
+MeasureInfo.stopt	0
+MeasureInfo.synFD	4
+MeasureInfo.synHF	4.0
+MeasureInfo.synTH	-25.0
+MeasureInfo.synZC	-5.0
+MeasureInfo.tacG	1
+MeasureInfo.tacLH	96.0
+MeasureInfo.tacLL	5.0
+MeasureInfo.tacOF	2.0
+MeasureInfo.tacR	1.25E-8
+MeasureInfo.time	16:00:28
+MeasureInfo.trigger	2
+MeasureInfo.useMotor	0
+MeasureInfo.xAxis	0
+MeasureInfo.xyGain	1
+Revision	8 bits ADC
+Time	16:00:28
+Title	Cycle 1
+Version	Prairie View 5.8.64.400
+bhfileHeader.chksum	61012
+bhfileHeader.dataBlockLength	134217728
+bhfileHeader.dataBlockOffs	736
+bhfileHeader.headerValid	21845
+bhfileHeader.infoLength	166
+bhfileHeader.infoOffs	42
+bhfileHeader.measDescBlockLength	512
+bhfileHeader.measDescBlockOffs	224
+bhfileHeader.noOfDataBlocks	1
+bhfileHeader.noOfMeasDescBlocks	1
+bhfileHeader.reserved1	1
+bhfileHeader.reserved2	0
+bhfileHeader.revision	654
+bhfileHeader.setupOffs	208
+channels	1
+time base	12.500000146076218
+time bins	256
