@@ -21,3 +21,4 @@ tools/*.jar
 .*.swp
 *.clean
 .vscode
+debug-test/test_bochum_uz.sdt
