@@ -22,3 +22,5 @@ tools/*.jar
 *.clean
 .vscode
 debug-test/test_bochum_uz.sdt
+debug-test/imagej
+debug-test/lib
