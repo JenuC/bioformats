@@ -1,49 +1,110 @@
-# SDTReaderDebug
+# SDT Reader Debug Tools
 
-A simple tool to debug and test the SDTReader.java file from Bio-Formats.
+This folder contains tools for debugging and analyzing SDT files, particularly for understanding the differences between zipped and unzipped SDT files.
 
-## Overview
+## Available Tools
 
-This tool helps diagnose issues with reading .sdt files using the Bio-Formats SDTReader class. It prints detailed information about the file structure, metadata, and attempts to read image data.
+### 1. SDT File Analysis and Debugging
 
-## Building
+- **SimpleSDTReaderDebug**: Analyzes the header structure of SDT files without Bio-Formats dependency
+- **SDTReaderDebugger**: Advanced debugging tool that analyzes both header and data sections, including ZIP structure
+- **EnhancedSDTReader**: Modified version of Bio-Formats' SDTReader with improved handling of zipped SDT files
 
-First, you need to build the Bio-Formats project:
+### 2. Preprocessor Tools
 
-```bash
-cd ..
-mvn clean install
-```
+- **SDTUnzipper**: Detects and unzips compressed SDT files to make them compatible with Bio-Formats
+- **BioFormatsSDTWrapper**: A wrapper that automatically preprocesses SDT files before passing them to Bio-Formats
 
-Then, build the debug tool:
+### 3. ImageJ Integration
 
-```bash
-cd debug-test
-make
-```
+- **ImageJSDTPlugin**: An ImageJ plugin that can open both zipped and unzipped SDT files
 
-## Running
+## Setup Instructions
 
-To run the tool on an SDT file:
+### Prerequisites
 
-```bash
-make run FILE=/path/to/your/file.sdt
-```
+- Java Development Kit (JDK) 8 or higher
+- Windows operating system (for running batch files)
 
-## Output
+### Building and Running the Tools
 
-The tool will print detailed information about:
+1. **Setup Environment**
 
-1. File format
-2. SDT header information
-3. Detailed SDT metadata
-4. Image dimensions
-5. An attempt to read the first plane of data
+   Run the setup script to download dependencies and prepare the environment:
 
-## Troubleshooting
+   ```
+   imagej_setup.bat
+   ```
 
-If you encounter errors:
+2. **Test the SDT Unzipper**
 
-1. Make sure Bio-Formats has been built successfully
-2. Check that your .sdt file exists and is accessible
-3. Examine error messages for specific issues with the file format or reader implementation 
+   To test the SDT unzipper utility:
+
+   ```
+   test_unzipper.bat test_bochum.sdt
+   ```
+
+3. **Test the Bio-Formats Wrapper**
+
+   To test the Bio-Formats wrapper:
+
+   ```
+   test_wrapper.bat test_bochum.sdt
+   ```
+
+4. **Run ImageJ with the Plugin**
+
+   To start ImageJ with our plugin installed:
+
+   ```
+   run_imagej.bat
+   ```
+
+5. **Debug SDT Reader**
+
+   To analyze an SDT file structure:
+
+   ```
+   debug_sdtreader.bat test_bochum.sdt
+   ```
+
+6. **Test Enhanced SDT Reader**
+
+   To compare the original and enhanced SDT readers:
+
+   ```
+   run_enhanced_reader.bat test_bochum.sdt
+   ```
+
+## Files Included
+
+- **test_bochum.sdt**: Zipped SDT file (2.0MB)
+- **test_bochum_uz.sdt**: Unzipped SDT file (128MB)
+- **uz_metadata.txt**: Metadata extracted from unzipped file
+- **zip_medata.txt**: Metadata extracted from zipped file
+
+## Understanding the Problem
+
+The BioFormats library's SDTReader is correctly identifying the zipped SDT file by checking for the "PK" signature bytes at the beginning of the data block. When it finds these bytes, it uses a ZipInputStream to decompress the data.
+
+However, there are issues with the zipped version:
+
+1. The unzipped file (`test_bochum_uz.sdt`) works because it's already decompressed and can be read directly.
+2. The zipped file (`test_bochum.sdt`) is not working correctly with BioFormats, which could be due to:
+   - Issues with the ZIP header structure
+   - The compression format not being exactly what the BioFormats library expects
+   - Possible corruption in the ZIP file
+
+Our enhanced tools help overcome these issues by:
+
+1. **The SDTUnzipper**: Preprocesses the file by extracting the zipped content
+2. **The EnhancedSDTReader**: Improves the original SDTReader with better ZIP handling
+3. **The BioFormatsSDTWrapper**: Automatically determines the file type and handles it accordingly
+
+## Further Investigation
+
+For further debugging:
+
+1. Use `SDTReaderDebugger` to analyze the structure of zipped SDT files
+2. Compare the metadata between zipped and unzipped files
+3. Examine the ZIP entry headers for any inconsistencies 
